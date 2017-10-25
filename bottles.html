@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>99 Bottles of Beer on the Wall</title>
+</head>
+<body>
+	<h1>99 Bottles of Beer</h1>
+	<script> 
+  // initialize variables
+  var count = 99;
+  var word = "bottles";
+
+  // loop over all the bottles and display the lyrics
+  while (count > 0) {
+      document.write(count + " " + word + " of beer on the wall<br>");
+      document.write(count + " " + word + " of beer,<br>");
+      document.write("Take one down, pass it around,<br>");
+      count = count - 1;
+      if (count > 0) {
+         document.write(count + " " + word + " of beer on the wall.<br>");
+      }
+      else {
+         document.write("No more " + word + " of beer on the wall.<br>");
+      }
+  }
+  </script>
+</body>
+</html>
